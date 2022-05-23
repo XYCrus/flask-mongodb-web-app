@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block container %}
+<h2>Find history blogs</h2>
+<p>Find a user's blog history</p>
+<form method="POST" action="{{ url_for('findhistory_post') }}">
+  <p>User name: <input type="text" id="fuser" name="fuser" /><br /></p>
+  <p>Time Descending or Ascending (input d or a): <input type="text" id="forder" name="forder" /><br /></p>
+  <p>
+    <a href="{{ url_for('read')}}">Cancel</a>
+    <input type="submit" name="post-btn" value="Post" />
+  </p>
+</form>
+{% endblock %}

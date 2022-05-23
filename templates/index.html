@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<h2>Welcome!</h2>
+<p>Welcome to Safe Space Blog For All. This is the home page. Here are a few links to example pages you might find interesting.
+    <ul>
+        <li><a href="{{ url_for('read')}}">a page that displays all blogs on this website</a></li>
+        <li><a href="{{ url_for('create')}}">a page with a form you can post a new blog</a></li>
+        <li><a href="{{ url_for('findhistory')}}">a page with a form you can trace blogs of any user</a></li>
+    </ul>
+</p>
+{% endblock %}
